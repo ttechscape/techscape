@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Techscape</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="container">
+            <h1>TECHSCAPE</h1>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><button id="dark-mode-toggle">Toggle Dark Mode</button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+   <section class="hero" id="home">
+    <div class="video-frame">
+        <video autoplay muted loop class="background-video">
+            <source src="f971ed560bfe57d409c9c22fafcc2dff.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <div class="hero-content">
+        <h2>Welcome to Techscape</h2>
+        <p>We are dedicated to providing innovative solutions that empower individuals and businesses. Explore our range of services designed to enhance your experience and help you thrive in the digital age. Your journey starts here!</p>
+    </div>
+</section>
+
+
+    <!-- Service Cards -->
+    <section class="services" id="services">
+        <div class="service-card data-recovery" onclick="toggleServiceDetails(this)">
+            <h3>Data Recovery</h3>
+            <p>Recover lost data from any device.</p>
+            <div class="service-details">
+                <p class="typing-effect">We offer comprehensive data recovery solutions for...</p>
+                <ul class="additional-info">
+                    <li>Cloud Recovery Services.</li>
+                    <li>PC/Computer Recovery Services.</li>
+                    <li>Phone Data Recovery Services.</li>
+                    <li>Deleted File Recovery.</li>
+                    <li>Corrupted File Repair.</li>
+                    <li>Forensic Data Recovery.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Cloud Services Card -->
+        <div class="service-card cloud-services" onclick="toggleServiceDetails(this)">
+            <h3>Cloud Services</h3>
+            <p>Flexible and scalable cloud solutions.</p>
+            <div class="service-details">
+                <p class="typing-effect">We provide reliable cloud infrastructure and 24/7 support to meet your business needs.</p>
+                <ul>
+                    <li>Scalable Infrastructure: Adaptable resources for business growth.</li>
+                    <li>Data Storage: Secure and expandable solutions.</li>
+                    <li>Cloud Networking: Fast and secure global connectivity.</li>
+                    <li>Multi-Cloud: Expertise with AWS, Azure, and Google Cloud.</li>
+                    <li>24/7 Monitoring and Management.</li>
+                    <li>Data Security: Encryption and compliance safeguards.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Crypto Services Card -->
+        <div class="service-card crypto-services" onclick="toggleServiceDetails(this)">
+            <h3>Crypto Services</h3>
+            <p>Comprehensive blockchain and crypto solutions.</p>
+            <div class="service-details">
+                <p class="typing-effect">We offer a range of crypto services to meet your digital asset needs.</p>
+                <ul>
+                    <li>Cold Wallet Creation: Secure storage for digital assets.</li>
+                    <li>Web3 Integration: Connect your site to blockchain technologies.</li>
+                    <li>Smart Contract Development: Automate transactions and processes.</li>
+                    <li>Crypto Payment Gateway: Enable crypto payments on your website.</li>
+                    <li>Blockchain Consulting: Expert advice on strategy and security.</li>
+                    <li>DeFi Solutions: Customized decentralized finance strategies.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id ="contact">
+    <div class="container">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or inquiries, feel free to reach out!</p>
+
+        <div class="contact-info">
+            <div class="contact-item">
+                <h3>Email:</h3>
+                <p>trenchtechnology17@gmail.com</p>
+            </div>
+            <div class="contact-item">
+                <h3>Phone:</h3>
+                <p>+254790522488</p>
+            </div>
+            <div class="contact-item">
+                <h3>Location:</h3>
+                <p>Biashar Street,Nairobi, kenya</p>
+            </div>
+            <div class="contact-item">
+                <h3>Instagram:</h3>
+                <a href="https://instagram.com/yourprofile" target="_blank" class="social-icon">Your Instagram Profile</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Techscape. All rights reserved.</p>
+    </footer>
+</body>
+</html>
